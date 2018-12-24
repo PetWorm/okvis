@@ -83,6 +83,9 @@ link_directories(${CMAKE_BINARY_DIR}/lib)
 find_package( Eigen REQUIRED )
 include_directories(${EIGEN_INCLUDE_DIR}) 
 
+# require OpenCV, added by QXC
+find_package(OpenCV REQUIRED)
+
 # libvisensor
 find_package(VISensor)
 
